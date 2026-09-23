@@ -4,8 +4,9 @@ response = ollama.chat(
     messages=[
         {
             "role": "user",
-            "content": "Name only main "
+            "content": "Name only main types of ai "
         }
     ]
 )
+
 print(response["message"]["content"])
