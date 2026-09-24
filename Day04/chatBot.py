@@ -16,3 +16,6 @@ while True:
          "content": response["message"]["content"]}
     )
     print("AI:",response["message"]["content"])
+    
+         .\.venv\Scripts\Activate.ps1
+         streamlit run uiChatBot.py
