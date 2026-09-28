@@ -1,9 +1,9 @@
 import ollama
 import streamlit as st
-st.markdown(" # Welcome to my Chatbot App!!!")
+st.title("Welcome to my Chatbot App!!!")
 with st.sidebar:
     st.header("Chat Settings")
-    if st.button("clear chat 🗑️"):
+    if st.button("clear chat"):
         st.session_state.messages=[]
         st.sucess("Chat cleared")
     personalities = {
