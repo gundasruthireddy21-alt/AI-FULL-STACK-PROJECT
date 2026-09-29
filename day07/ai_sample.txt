@@ -1,0 +1,7 @@
+
+Artifical Intelligence is a branch of computer science.
+Machine Learning is a subset of aritifical intelligence.
+Deep Learning uses neural networks.
+Large Language Models can understand and generate human-like text.
+RAG combines retriveal with language generation.
+

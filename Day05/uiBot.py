@@ -1,15 +1,15 @@
 import ollama
 import streamlit as st
-st.markdown(" # Welcome to my Chatbot App!!!")
+st.title(" :red[ My Chatbot App!!!]")
 with st.sidebar:
-    st.header("Chat Settings")
+    st.header("Chat Settings 🕹️🧩")
     if st.button("clear chat 🗑️"):
         st.session_state.messages=[]
         st.sucess("Chat cleared")
     personalities = {
-        "kid" : " answer the questions like explaining to a 5 year old kid. Give answer in 2 lines only",
-        "Friend" : "Answer the questions in a friendly and causal manner.give answer in 2 lines only",
-        "teacher": "Answer the questions ina friendly manner and professionally .give answer in 2 lines only",
+        "kid👶" : " answer the questions like explaining to a 5 year old kid. Give answer in 2 lines only",
+        "Frien👩👩" : "Answer the questions in a friendly and causal manner.give answer in 2 lines only",
+        "teacher🧑‍🏫": "Answer the questions ina friendly manner and professionally .give answer in 2 lines only",
     }
     personality = st.selectbox("select a personality", personalities.keys())
     uploaded_file = st.file_uploader("uploaded a text file...")
@@ -35,7 +35,7 @@ if question:
     })
     with st.chat_message("user"):
         st.write(question)
-    with st.spinner("Thinking..."):
+    with st.spinner("🧠🧠Thinking..."):
         response = ollama.chat(
             model="llama3.2:3b",
             messages=[
